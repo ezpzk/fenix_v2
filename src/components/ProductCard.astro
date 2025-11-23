@@ -1,0 +1,15 @@
+---
+const { product } = Astro.props;
+const whatsappMessage = encodeURIComponent(`Hi, I'm interested in buying: ${product.name}`);
+const whatsappLink = `https://wa.me/94761146997?text=${whatsappMessage}`;
+---
+<!-- <div class="border rounded shadow hover:shadow-lg transition p-4 bg-white"> -->
+<div class="border shadow transition p-4 bg-white">
+  <!-- <img src={product.image} alt={product.name} class="w-full h-48 object-cover rounded"/> -->
+  <img src={product.image} alt={product.name} class="w-full h-60 object-cover border"/>
+  <h2 class="mt-2 font-bold text-lg">{product.name}</h2>
+  <p class="mt-1 text-gray-600">LKR {product.price}</p>
+  <a href={whatsappLink} target="_blank" class="mt-3 inline-block bg-black text-white px-4 py-2 hover:bg-yellow-300 hover:text-black hover:scale-105 transition transform duration-200 border border-black">
+    Buy on WhatsApp
+  </a>
+</div>

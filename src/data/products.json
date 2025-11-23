@@ -1,0 +1,32 @@
+[
+  {
+    "name": "p1",
+    "price": 2500,
+    "image": "/images/tshirt.jpg"
+  },
+  {
+    "name": "p2",
+    "price": 5000,
+    "image": "/images/tshirt.jpg"
+  },
+  {
+    "name": "p3",
+    "price": 1500,
+    "image": "/images/tshirt.jpg"
+  },
+  {
+    "name": "p1",
+    "price": 2500,
+    "image": "/images/tshirt.jpg"
+  },
+  {
+    "name": "p2",
+    "price": 5000,
+    "image": "/images/tshirt.jpg"
+  },
+  {
+    "name": "p3",
+    "price": 1500,
+    "image": "/images/tshirt.jpg"
+  }
+]

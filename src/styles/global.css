@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pirata+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@theme {
+  --font-pirata: "Pirata One", sans-serif;
+  --font-mono: "Space Mono", Courier, monospace;
+  --font-sans: "Exo 2", system-ui, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+/* :root {
+  --pirata: "Pirata One";
+  --mono: "Space Mono";
+  --sans: "Exo 2";
+  --serif: Georgia;
+} */
+
+/* body {
+  background-color: #f7ff8d;
+  background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+  background-repeat: repeat;
+} */
+
+#title {
+  font-family: var(--font-pirata);
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
